@@ -17,14 +17,32 @@ $estudiante = new estudiante_model();
 
 
     $alumno = [
-        'nombre' => 'Rober',
+        'nombre' => 'Robers',
         'apellido' => 'Cardenas',
         'edad' => 19,
-        'email' => 'rober@gmail.com'
+        'email' => 'sadsd@gmail.com'
     ];
-
+    // Insertar.
     $estudiante->create($alumno);
 
+    /* Mostrar datos estudiantes.
+
+    $resultados = $estudiante->consultar();
+    var_dump($resultados);
+
+    // Si queremos mostrar datos en particular.
+
+    foreach ($resultados as $estudiante) {
+        echo $estudiante['nombre'];
+    } 
+    */
+
+    // Actualizar
+    //$estudiante->actualizar($alumno);
+
+    // Eliminar
+    //$alumno = ['email' => 'sadsd@gmail.com'];
+    //$estudiante->eliminar('', $alumno); // Agregando todos en el string vacio eliminaremos todos los datos de la BD.
     ?>
 </body>
 
